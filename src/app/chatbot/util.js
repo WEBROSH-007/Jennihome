@@ -221,7 +221,7 @@ function formatProductItem(item, colors, config) {
         <div class="mt-3 grid gap-2">
           ${features.map(feature => `
             <div class="flex flex-wrap py-1 border-b" style="border-color: ${colors.border};">
-              <span class="font-medium mr-2 min-w-[140px]" style="color: ${colors.muted};">
+              <span class="font-medium mr-2 min-w-[235px]" style="color: ${colors.muted};">
                 ${feature.key}:
               </span> 
               <span class="flex-1" style="color: ${colors.foreground};">
