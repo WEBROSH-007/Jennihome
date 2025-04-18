@@ -175,10 +175,10 @@ function formatMessage(rawData) {
       <div class="product-item mb-4 p-3 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
         <h4 class=" text-black">${item.number}. ${firstSentence}</h4>
         ${features.length > 0 ? `
-          <div class="pl-3 mt-2">
+          <div class=" mt-2">
             ${features.map(feature => 
               `<div class="flex py-1 flex-wrap">
-                <span class="font-medium min-w-[120px] mr-2">${feature.key}:</span> 
+                <span class="font-medium min-w-[150px] mr-2">${feature.key}:</span> 
                 <span class="flex-1">${feature.value}</span>
               </div>`
             ).join('')}
