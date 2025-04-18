@@ -281,7 +281,7 @@ export default function Chatbot() {
                     
                     {/* Time under message */}
                     <div className={`text-xs text-gray-500 mt-1 ${message.sender === 'user' ? 'text-right mr-1' : 'ml-10'}`}>
-                      {message.sender === 'bot' ? 'Algo AI Agent - ' : ''}{message.time}
+                      {message.sender === 'bot' ? 'JenniBot Agent - ' : ''}{message.time}
                     </div>
                     
                     {/* Quick responses after bot messages */}
@@ -375,7 +375,7 @@ export default function Chatbot() {
                   </button>
                 </div>
                 <div className="flex justify-end items-center mt-2 text-xs text-gray-400">
-                  <div>POWERED BY <span className="font-bold text-gray-500">Algo AI AGENT</span></div>
+                  <div>POWERED BY <span className="font-bold text-gray-500">JenniBot AGENT</span></div>
                 </div>
               </form>
             </>
