@@ -20,9 +20,7 @@
     background-color: rgba(255, 255, 255, 0.5);
   }
   
-  .product-item:hover {
-    transform: translateY(-2px);
-  }
+ 
   
   /* Override chatbot message container styles for formatted content */
   .message-content .response-container {
@@ -32,7 +30,6 @@
   .message-content .list-container {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
   }
   
   /* Responsive styling for different screen sizes */

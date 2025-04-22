@@ -133,8 +133,8 @@ export default function Chatbot() {
         throw new Error('Failed to get response');
       }
       
-      console.log(response);
       const data = await response.json();
+      console.log(data);
       
       // Add bot response to chat
       const botMessageId = Date.now();
@@ -146,6 +146,8 @@ export default function Chatbot() {
         showRating: true,
         isHTML: true // Flag to indicate this message contains HTML
       };
+
+      console.log(botMessage.text);
       
       setMessages(prev => [...prev, botMessage]);
       setCurrentRatingMessageId(botMessageId);
@@ -262,7 +264,7 @@ export default function Chatbot() {
                       )}
                       
                       <div 
-                        className={`px-4 py-3 rounded-2xl max-w-[75%] ${
+                        className={`px-4 py-3 rounded-2xl max-w-[90%] ${
                           message.sender === 'user' 
                             ? 'bg-blue-600 text-white rounded-tr-none' 
                             : 'bg-gray-100 text-gray-800 rounded-tl-none'
